@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1d1d1d;
+}
+
+section {
+    position: relative; 
+    text-align: center;
+    z-index: 3;
+    transition: 1.5s;
+}
+
+#screen {
+    margin-top: 35px; 
+    opacity: 0;
+}
+
+
+
+.appear {
+    animation: show 15s;
+    animation-delay: 8s;
+}
+
+#text {
+    margin: 0 auto;
+}
+
+#text,
+#caret {
+    color: #3ad61b;
+    font-size: 2.6rem;
+    margin-top: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+}
+
+#caret {
+    animation: blink 1s infinite;
+    
+}
+
+#button {
+    display: block;
+    margin: 45px auto;
+    width: 150px;
+    height: 55px;
+    background-color: #1d1d1d;
+    border: 2px solid #3ad61b;
+    border-radius: 1px;
+    font-size: 2.2rem;
+    color: #3ad61b;
+    font-family: 'Roboto Mono', monospace; 
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+#button:hover {
+    animation: flash 0.4s;
+}
+
+/* Animations */
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes flash {
+    0% {
+        border: none;
+        color: #1d1d1d;
+    }
+    25% {
+        border: 2px solid #3ad61b;
+        color: #3ad61b;
+    }
+    75% {
+        border: none;
+        color: #1d1d1d;
+    }
+    100% {
+        border: 2px solid #3ad61b;
+        color: #3ad61b;
+    }
+}
+
+/* Screen adjust */
+@media screen and (max-width: 700px) {
+    #face {
+        width: 75%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    #text,
+    #caret {
+        font-size: 1.4rem;
+    }
+
+    #button {
+        width: 125px;
+        height: 40px;
+        font-size: 1.6rem;
+    }
+}

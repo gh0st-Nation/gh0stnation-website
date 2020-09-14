@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #1d1d1d;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 2px solid #3ad61b;
+    height: 85px;
+}
+
+span {
+    color: #3ad61b;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+}
+
+.drop-box {
+    position: relative;
+    margin-top: 25px;
+}
+
+.drop-box span {
+    cursor: pointer;
+}
+
+
+#caret {
+    color: #3ad61b;
+    font-size: 2.2rem;
+    margin-top: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+}
+
+#caret {
+    animation: blink 1s infinite;
+    
+}
+
+/* Section Content */ 
+
+section {
+    margin: 55px 10px;
+    border-radius: 2px;
+    width: 100%;
+    text-align: center;
+}
+
+#message {
+    margin-left: 35px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a img:hover {
+    opacity: .6;
+}
+
+li h3 {
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+li p {
+    font-size: 16px;
+}
+
+#p-active {
+    display: none;
+}
+
+#p-container {
+    color: #3ad61b;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.8rem;
+    font-weight: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} 
+
+.p-box p {
+    max-width: 550px;
+}
+
+#join {
+    display: none;
+}
+
+#join-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.j-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.j-box h2 {
+    font-family: 'Roboto Mono', monospace;
+    color: #3ad61b;
+}
+
+.j-box img {
+    width: 95px;
+    height: auto; 
+}
+
+.p-box {
+    text-align: center;
+    margin: 35px 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.p-box a {
+    border: 2px solid #3ad61b;
+    color: #3ad61b;
+    text-decoration: none;
+    font-size: 0.8em;
+    margin: 25px 0;
+    padding: 8px;
+}
+
+
+/* animations */
+
+
+@media screen and (max-width: 330px) {
+    .j-box h2 {
+        font-size: 14px;
+    }
+    #join-container {
+        flex-direction: column;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

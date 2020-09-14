@@ -1,0 +1,46 @@
+#clock-container {
+    text-align: center;
+    background: #1d1d1d;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    width: 100%;
+    margin: 20px 0;
+    display: none;
+}
+
+h1{
+  color: #3ad61b;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+
+#clockdiv{
+    font-family: 'Roboto Mono', monospace;
+    color: #3ad61b;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 1px;
+    background: #1d1d1d;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #1d1d1d;
+    border: 2px solid #3ad61b;
+    display: inline-block;
+}
+
+.smalltext{
+    color: #3ad61b;
+    padding-top: 5px;
+    font-size: 16px;
+}
