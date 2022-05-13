@@ -1,0 +1,143 @@
+* {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+ /*   background-color: #0a0a0a; */
+    overflow: hidden;
+}
+#overlay-container {
+    width:100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #0a0a0a;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#process-container {
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+   
+}
+
+#loading-container {
+    position: relative;
+    border-radius: 2px;
+    width: 420px;
+    line-height: 0.8;
+    margin: 200px auto;
+    text-align: center;
+    background-color: #0a0a0a;
+}
+#loading-container a {
+    display: block; 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 100;
+    padding: 15px;
+}
+
+#loading-container {
+    margin-bottom: 18px;
+}
+
+#load-bar {
+    font-size: 1.6em;
+    letter-spacing: 1px;
+}
+
+.brace {
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 1.4em;
+    padding: 1px 2px;
+}
+
+#notice {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* System status */
+.access-off {
+    display: none;
+    margin: 16px 105px;
+    opacity: 0;
+    cursor: default;
+}
+
+.access-on {
+    margin: 12px 105px;
+    cursor: pointer;
+    border-radius: 2px;
+    text-decoration: none;
+    color: #22d91c;
+    text-transform: uppercase;
+    transition: .8s;
+}
+
+.access-on:hover {
+    color: #ffffff;
+}
+
+.normal {
+    color: #22d91c; 
+}
+
+.normal-border {
+    box-shadow: 0px 0px 30px #22d91c;
+    border: 1px solid #6dca6a;
+}
+
+.error {
+    color: #f00c00;
+}
+
+.error-border {
+    box-shadow: 0px 0px 30px #f00c00;
+    border: 1px solid #da564f;
+}
+
+@media screen and (max-width: 480px) {
+    #loading-container {
+        width: 290px;
+    }
+    #loading-container a {
+        font-size: 1.2em;
+    }
+    .brace {
+        font-size: 1.2em;
+    }
+    .access-on {
+        margin: 16px auto;
+    }
+    #load-bar {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 360px) {
+    #loading-container {
+        width: 240px;
+    }
+    #loading-container a {
+        font-size: 1em;
+        padding: 1px;
+        display: inline-block;
+    }
+    .brace {
+        font-size: 1em;
+    }
+    .access-on {
+        margin: 12px auto;
+    }
+    #load-bar {
+        font-size: 0.8em;
+    }
+}
